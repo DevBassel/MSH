@@ -1,0 +1,91 @@
+{
+  "NavBar": {
+    "home": "home",
+    "about": " about",
+    "learn": "learn",
+    "dowenload": "download app",
+    "thx": "Thanks!"
+  },
+
+  "homeSection-1": {
+    "title": "An Investment Platform",
+    "p": "Sign up and get $10,000 in a demo account to learn how to trades",
+    "btn": "Start Now Its Free"
+  },
+
+  "homeSection-2": {
+    "title": "We support 13 languages, so traders from all over the world can Enjoy and profit at any time"
+  },
+
+  "homeSection-3": {
+    "title": "What investments can I make on MSH?",
+    "shears": "Shears",
+    "investment": "Investment funds"
+  },
+
+  "homeSection-4": {
+    "title": "Investing Build your portfolio starting with just $1",
+    "p": "Invest in stocks, options, and ETFs at your pace and commission-free.",
+    "btn": "Learn more"
+  },
+
+  "homeSection-6": {
+    "item1": {
+      "title": "Intuitive Trading Experience",
+      "p": "For self-directed traders, we offer a dynamic streaming trading experience. Manage your account, access your portfolio, and make trades seamlessly across multiple devices – on a desktop or with mobile and tablet apps for iPhone and Android."
+    },
+    "item2": {
+      "title": "Client service",
+      "p": "We take pride in providing the best service possible. Our brokers or service team are available 24/7 to answer your investment and account questions. Also, if you have a Personal Advice portfolio, our team is here to help with your account-specific questions."
+    },
+    "item3": {
+      "title": "Build your knowledge",
+      "p": "Access informational articles provided by Ally Invest to help you improve your understanding of investment strategies and market trends."
+    },
+    "item4": {
+      "title": "Seamless transfers",
+      "p": "Effortlessly move up to $250,000 a day from your Ally Bank account to your Ally Invest account, or vice versa. Many transfers occur within minutes during market hours."
+    }
+  },
+  "homeSection-7": {
+    "title": "The easiest way to invest in stocks and investment funds in Egypt",
+    "p": "Join over 10,000 in MSH users today!",
+    "btn": "Lets Learn How"
+  },
+
+  "homelasteSection": {
+    "title": "The easiest way to invest in stocks and investment funds in Egypt Join more than 10,000 MSH users today!    "
+  },
+
+  "learnNav": {
+    "home": "home",
+    "about": " about",
+    "blogs": "blogs",
+    "btn": "get the app"
+  },
+
+  "learnSection-1": {
+    "title": "Start Learning Deeper And More Amazing Investing Togethers",
+    "text": "lorem lorem lorem lorem lorem lorem ",
+    "demo": "Demo Use",
+    "getApp": "Get The App"
+  },
+
+  "learnSection-2": {
+    "title": "Our Courses",
+    "viewAll": "View All",
+    "readMore": "read more"
+  },
+
+  "learnLastSection": {
+    "item1": {
+      "title": "Years Experience"
+    },
+    "item2": {
+      "title": "Possitive Reveiws"
+    },
+    "item3": {
+      "title": "Trusted Clinents"
+    }
+  }
+}
