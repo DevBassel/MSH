@@ -7,7 +7,7 @@ export default function Section({
 }) {
   return (
     <section
-      className={`${className} w-full md:w-4/5 mx-auto text-white px-4 `}
+      className={`${className} w-full md:w-4/5 mx-auto  text-white px-4 `}
     >
       {children}
     </section>
