@@ -10,10 +10,10 @@ import Footer from "../../../components/home/Footer";
 
 export default function About() {
   return (
-    <main>
+    <main className="[&>section]:py-20">
       <Nav />
 
-      <div className="bg-[url(./assets/learn/s1BG.png)] bg-cover ">
+      <div className="bg-[url(./assets/learn/s1BG.png)] bg-cover mt-10 py-5 ">
         <Section1 />
       </div>
 

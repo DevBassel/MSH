@@ -13,7 +13,7 @@ export default function Nav() {
         <Button text={"Get The App"} className="bg-[#FFC107] " />
       </div>
 
-      <Link href="/">
+      <Link href="/" className=" block mx-auto w-fit">
         <Image
           src={learnLogo}
           alt="learn logo"

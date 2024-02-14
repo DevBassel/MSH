@@ -13,7 +13,7 @@ export default function Coures({ params }: { params: { courseId: string } }) {
       <div className="flex flex-col md:flex-row  overflow-auto relative">
         <div className="w-1/3 md:sticky top-0">
           <h1 className="text-5xl capitalize text-center  ">investing</h1>
-          <CourseCard />
+          <CourseCard removeReadMore={true} />
         </div>
 
         <p className="text-md flex-1 h-[500px] p-5  leading-relaxed font-mono">

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logos/logo.png";
 import Webcam from "react-webcam";
 
 export default function CardId() {

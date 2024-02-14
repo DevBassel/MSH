@@ -1,21 +1,29 @@
 "use client";
-import React from 'react'
-import { MdEmail, MdPassword, MdPhone, MdVerifiedUser } from 'react-icons/md';
+import React, { useState } from "react";
+import { MdEmail, MdPassword, MdPhone, MdVerifiedUser } from "react-icons/md";
 import mockpPhone from "../../../../assets/auth/login.png";
-import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTelegram, FaTiktok } from 'react-icons/fa';
-import { Link } from '../../../../util/navigation';
+import Image from "next/image";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTelegram,
+  FaTiktok,
+} from "react-icons/fa";
+import { Link } from "../../../../util/navigation";
+import { ImEye, ImEyeBlocked } from "react-icons/im";
+import { RiEyeCloseFill } from "react-icons/ri";
 
 export default function Register() {
+  const [showPass, setShowPass] = useState(false);
   return (
-  // Login page (Apple - google)
+    // Login page (Apple - google)
     // First section (BG) for make a hero section
     // we made this with tailwind
-    <div className="w-full bg-[url(./assets/auth/BG.png)] bg-cover bg-white h-screen flex items-center justify-center">
-      {/* hero section half login and socend half logo */}
-      <div className="hero container m-auto w-4/5 h-4/5 flex rounded-2xl  overflow-hidden">
+    <main className="bg-[url(./assets/auth/BG.png)] flex items-center h-screen bg-cover">
+      <div className="container m-auto w-4/5  flex rounded-2xl overflow-hidden">
         {/* login half (Apple - google) */}
-        <div className="first bg-zinc-300 w-2/4">
+        <div className="first flex flex-col flex-1 items-center bg-zinc-300 py-3 w-2/4">
           <h1 className="text-center text-3xl font-bold mt-6">
             Register To Your Account
           </h1>
@@ -24,7 +32,8 @@ export default function Register() {
             {/* First input (Name) */}
             <div
               className="flex items-center justify-center bg-white rounded-md overflow-hidden
-            p-4 my-3">
+            p-4 my-3"
+            >
               <MdVerifiedUser className="text-2xl text-gray-600" />
               <input
                 type="Name"
@@ -37,7 +46,8 @@ export default function Register() {
             {/* input (Email) */}
             <div
               className="flex items-center justify-center bg-white rounded-md overflow-hidden
-            p-4 my-3">
+            p-4 my-3"
+            >
               <MdEmail className="text-2xl text-gray-600" />
               <input
                 type="email"
@@ -50,10 +60,11 @@ export default function Register() {
             {/* phone num Register */}
             <div
               className="flex items-center justify-center bg-white rounded-md overflow-hidden
-            p-4 my-3">
+            p-4 my-3"
+            >
               <MdPhone className="text-2xl text-gray-600" />
               <input
-                type="num"
+                type="text"
                 className="flex-1 rounded-md overflow-hidden
               focus:outline-none px-7"
                 placeholder="Number"
@@ -67,12 +78,18 @@ export default function Register() {
             >
               <MdPassword className="text-2xl text-gray-600" />
               <input
-                type="password"
+                type={showPass ? "text" : "password"}
                 className="flex-1 rounded-md overflow-hidden
               focus:outline-none px-7"
                 placeholder="Password"
                 required
               />
+              <div
+                onClick={() => setShowPass(!showPass)}
+                className="text-3xl cursor-pointer"
+              >
+                {showPass ? <ImEye /> : <RiEyeCloseFill />}
+              </div>
             </div>
             {/* confirm input (Password) */}
             <div
@@ -81,18 +98,25 @@ export default function Register() {
             >
               <MdPassword className="text-2xl text-gray-600" />
               <input
-                type="password"
+                type={showPass ? "text" : "password"}
                 className="flex-1 rounded-md overflow-hidden
               focus:outline-none px-7"
                 placeholder="Confirm Password"
                 required
               />
+              <div
+                onClick={() => setShowPass(!showPass)}
+                className="text-3xl cursor-pointer"
+              >
+                {showPass ? <ImEye /> : <RiEyeCloseFill />}
+              </div>
             </div>
             {/* button login */}
             <button
-            className="mt-3 w-full bg-blue-500 hover:bg-blue-700 text-white 
-            font-bold py-2 px-4 rounded">
-            Sign In
+              className="mt-3 w-full bg-blue-500 hover:bg-blue-700 text-white 
+            font-bold py-2 px-4 rounded"
+            >
+              Sign In
             </button>
 
             {/* Don’t Have an Account ?  forget PASS */}
@@ -102,14 +126,14 @@ export default function Register() {
                 className="text-cyan-600 font-semibold
               hover:underline pl-2"
               >
-              <Link href={'login'}>LogIn</Link>
+                <Link href={"login"}>LogIn</Link>
               </p>
             </div>
           </form>
         </div>
 
         {/* logo(APP) half */}
-        <div className="secend bg-gradient-to-t from-[#CB6CE6] to-[#1462CA] w-2/4 flex flex-col items-center justify-center">
+        <div className="secend hidden md:flex bg-gradient-to-t from-[#CB6CE6] to-[#1462CA] w-2/4  flex-col items-center justify-center">
           <Image src={mockpPhone} alt="" className="w-3/5 pb-5" />
           <div className="flex list-none w-full justify-evenly text-white text-3xl">
             <li className="">
@@ -135,6 +159,6 @@ export default function Register() {
           </div>
         </div>
       </div>
-    </div>
-  )
+    </main>
+  );
 }

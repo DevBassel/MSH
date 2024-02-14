@@ -18,7 +18,7 @@ export default function Section2() {
         <CourseCard />
       </div>
 
-      <Link href="/our-coures" replace><Button
+      <Link href="/our-courses" replace><Button
         text={t("viewAll")}
         className="bg-white bg-opacity-50 hover:scale-105 transition-all
         text-black block text-2xl w-3/5 mt-10 mx-auto rounded-full"/></Link>

@@ -5,7 +5,11 @@ import { useTranslations } from "next-intl";
 import Button from "../common/Button";
 import { Link } from "../../util/navigation";
 
-export default function CourseCard() {
+export default function CourseCard({
+  removeReadMore,
+}: {
+  removeReadMore?: boolean;
+}) {
   const t = useTranslations("learnSection-2");
   return (
     <article className="bg-white rounded-3xl overflow-hidden m-3">
@@ -16,12 +20,14 @@ export default function CourseCard() {
           simply dummy text of the printing and typesetting industry...
         </p>
 
-        <Link href={'our-courses/1'}> 
-          <Button
-            text={t("readMore")}
-            className="bg-black text-white w-full mt-5  hover:bg-white hover:text-black transition-all"
-          />
-        </Link>
+        {!removeReadMore && (
+          <Link href={"our-courses/1"}>
+            <Button
+              text={t("readMore")}
+              className="bg-black text-white w-full mt-5  hover:bg-white hover:text-black transition-all"
+            />
+          </Link>
+        )}
       </div>
     </article>
   );

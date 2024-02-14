@@ -20,7 +20,7 @@ export default function Home() {
   const [openChat, setOpenChat] = useState(false);
 
   return (
-    <main>
+    <main className="[&>section]:py-20">
       <NavBar />
 
       {/* chat bot */}
