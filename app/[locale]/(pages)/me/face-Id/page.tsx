@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import logo from "../../assets/logo.png";
-import Webcam, { WebcamProps } from "react-webcam";
+import logo from "../../../../assets/logos/logo.png";
+import Webcam from "react-webcam";
 
 export default function FaceId() {
   const webcamRef = useRef<Webcam | null>(null);
@@ -16,9 +16,9 @@ export default function FaceId() {
     <main className="bg-[url(./assets/auth/BG.png)] flex items-center h-screen bg-cover">
       <div className="container m-auto w-4/5 h-4/5 flex rounded-2xl overflow-hidden">
         <div className="first flex flex-1 items-center bg-zinc-300 w-2/4">
-          <div className="flex-1 flex-col">
+          <div className="flex-1 flex-col capitalize">
             <h1 className="text-blue-900 font-extrabold text-4xl text-center">
-              ID CARD
+              face id
             </h1>
             {isClient && (
               <Webcam
