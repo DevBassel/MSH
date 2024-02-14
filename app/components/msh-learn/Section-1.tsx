@@ -64,7 +64,7 @@ export default function Section1() {
         </div>
       </motion.div>
 
-      <div className="absolute bottom-24 right-1">
+      <div className="absolute bottom-3 right-1">
         <motion.div
           initial={{ height: 0 }}
           transition={{ duration: 1, ease: "linear" }}
