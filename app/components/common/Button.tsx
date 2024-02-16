@@ -8,7 +8,7 @@ export default function Button({ className, fun, text }: BtnProp) {
   return (
     <button
       onClick={() => fun && fun()}
-      className={` rounded-2xl py-3 cursor-pointer capitalize px-4 font-extrabold tracking-wider ${className}`}
+      className={` rounded-2xl py-2 cursor-pointer capitalize px-2 font-extrabold ${className}`}
     >
       {text || ""}
     </button>
