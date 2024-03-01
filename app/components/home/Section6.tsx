@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Section from "../common/Section";
-import img6_1 from "../../assets/home/6-1.svg";
-import img6_2 from "../../assets/home/6-2.svg";
-import img6_3 from "../../assets/home/6-3.svg";
-import img6_4 from "../../assets/home/6-4.svg";
+import img6_1 from "@app/assets/home/6-1.svg";
+import img6_2 from "@app/assets/home/6-2.svg";
+import img6_3 from "@app/assets/home/6-3.svg";
+import img6_4 from "@app/assets/home/6-4.svg";
 import { motion } from "framer-motion";
-import { initScrollAnim } from "../../util/initScrolAnim";
+import { initScrollAnim } from "@app/util/initScrolAnim";
 import { useTranslations } from "next-intl";
 
 export default function Section6() {

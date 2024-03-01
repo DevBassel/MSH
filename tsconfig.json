@@ -16,7 +16,10 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@app/*": ["./app/*"] // Define alias for the src directory
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -25,5 +28,6 @@
     ".next/types/**/*.ts",
     "dist/types/**/*.ts"
   ],
+
   "exclude": ["node_modules"]
 }

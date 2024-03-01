@@ -1,8 +1,8 @@
 import Image from "next/image";
-import s5 from "../../assets/home/s5.png";
+import s5 from "@app/assets/home/s5.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
-import { initScrollAnim } from "../../util/initScrolAnim";
+import { initScrollAnim } from "@app/util/initScrolAnim";
 
 export default function Section5() {
   return (

@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 import Section from "../common/Section";
 import { MotionProps, motion } from "framer-motion";
-import  Button  from "../common/Button";
+import Button from "../common/Button";
 
 export default function Section1() {
   const t = useTranslations("learnSection-1");
@@ -22,7 +22,7 @@ export default function Section1() {
   };
 
   return (
-    <Section className="text-center py-18 px-2 md:px-52   relative">
+    <Section className="text-center py-18  px-10 lg:px-52   relative">
       <div className="absolute left-1 top-16">
         <motion.div
           initial={{ width: 0 }}
@@ -54,7 +54,7 @@ export default function Section1() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1, ease: "linear" }}
       >
-        <h1 className="text-5xl mx-auto mb-3">{t("title")}</h1>
+        <h1 className="text-4xl mx-auto mb-3">{t("title")}</h1>
 
         <p className="text-sm">{t("text")}</p>
 

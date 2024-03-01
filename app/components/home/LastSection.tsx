@@ -1,7 +1,7 @@
 import Image from "next/image";
-import iphonemocakp from "../../assets/home/iphone-15w.png";
-import google from "../../assets/home/Btn-Download-Google-play.svg";
-import apple from "../../assets/home/Btn-Dwonload-App-Store.svg";
+import iphonemocakp from "@app/assets/home/iphone-15w.png";
+import google from "@app/assets/home/Btn-Download-Google-play.svg";
+import apple from "@app/assets/home/Btn-Dwonload-App-Store.svg";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 

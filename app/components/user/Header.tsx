@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { RiNotification3Line } from "react-icons/ri";
-import divider from "../../assets/learn/divider.svg";
+import divider from "@app/assets/learn/divider.svg";
 
 export default function Header() {
   return (
     <>
-      <header className=" sticky top-0 bg-black justify-between">
-        <div className="flex items-center w-full  px-5 md:px-10 py-2 justify-between">
-          <div className="capitalize text-xl ">
+      <header className=" sticky top-0 bg-black z-20 justify-between">
+        <div className="flex items-center w-full  px-5 md:px-10 py-1 justify-between">
+          <div className="capitalize  ">
             <h1>Hello,</h1>
             <h1>TypeScript {"<3"} </h1>
           </div>

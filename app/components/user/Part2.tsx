@@ -12,7 +12,7 @@ export default function Part2() {
         </div>
         <Button text="more details" className="bg-[#172774] rounded-xl" />
       </div>
-      <div className="flex-[0.5] h-[200px] overflow-scroll">
+      <div className="flex-[0.5] h-[200px] overflow-scroll pb-16">
         <MarketCard />
         <MarketCard />
         <MarketCard />

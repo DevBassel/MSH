@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import { Link } from "../../util/navigation";
+import { Link } from "@app/util/navigation";
 
 interface FeedItemI {
   name: string;

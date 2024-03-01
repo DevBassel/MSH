@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import img from "../../assets/home/s3-2.png";
+import img from "@app/assets/home/s3-2.png";
 import { useTranslations } from "next-intl";
 import Button from "../common/Button";
-import { Link } from "../../util/navigation";
+import { Link } from "@app/util/navigation";
 
 export default function CourseCard({
   removeReadMore,

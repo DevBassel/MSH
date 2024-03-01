@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import Section from "../common/Section";
-import img3_1 from "../../assets/learn/3-1.svg";
-import img3_2 from "../../assets/learn/3-2.svg";
-import img3_3 from "../../assets/learn/3-3.svg";
-import img3_4 from "../../assets/learn/3-4.svg";
-import img3_5 from "../../assets/learn/3-5.svg";
+import img3_1 from "@app/assets/learn/3-1.svg";
+import img3_2 from "@app/assets/learn/3-2.svg";
+import img3_3 from "@app/assets/learn/3-3.svg";
+import img3_4 from "@app/assets/learn/3-4.svg";
+import img3_5 from "@app/assets/learn/3-5.svg";
 import { motion } from "framer-motion";
 import { initScrollAnim } from "../../util/initScrolAnim";
 import { useTranslations } from "next-intl";

@@ -2,10 +2,10 @@
 import { GiWallet } from "react-icons/gi";
 import Button from "../common/Button";
 import { BsFilePostFill, BsPersonLinesFill } from "react-icons/bs";
-import learn from "../../assets/learn/learn.svg";
+import learn from "@app/assets/learn/learn.svg";
 import Image from "next/image";
-import companys from "../../assets/companys.svg";
-import { Link } from "../../util/navigation";
+import companys from "@app/assets/companys.svg";
+import { Link } from "@app/util/navigation";
 
 export default function Part1() {
   return (
