@@ -7,7 +7,7 @@ import { Link } from "@app/util/navigation";
 
 export default function Nav() {
   return (
-    <nav className=" w-[95%] m-auto  backdrop-blur-lg bg-opacity-35  rounded-full text-white p-1.5 px-5">
+    <nav className=" w-[95%] m-auto  backdrop-blur-lg bg-opacity-35 rounded-full text-white p-1.5 px-5 pt-6">
       <div className="m-auto capitalize flex items-center text-black  justify-between p-1">
         <Button text={"Demo Use"} className="bg-white  " />
         <Button text={"Get The App"} className="bg-[#FFC107] " />

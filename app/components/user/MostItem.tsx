@@ -4,7 +4,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 export default function MostItem() {
   return (
-    <div className="flex bg-gradient-to-r mx-5 my-2 from-[#172774] to-[#C058E4] p-1 px-3 items-center  rounded-3xl">
+    <div className="flex bg-gradient-to-r mx-5 my-2 from-[#172774] to-[#C058E4] p-1 px-3 items-center  rounded-xl">
       <div className="mr-3 ">
         <Image src={company} alt="company" />
         <p>68.87</p>

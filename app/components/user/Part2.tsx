@@ -10,7 +10,7 @@ export default function Part2() {
           <p>2450.43 EG</p>
           <p>12%</p>
         </div>
-        <Button text="more details" className="bg-[#172774] rounded-xl" />
+        <Button text="more details" className="bg-[#172774] rounded-md" />
       </div>
       <div className="flex-[0.5] h-[200px] overflow-scroll pb-16">
         <MarketCard />

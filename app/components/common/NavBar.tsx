@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import logo from "@app/assets/logos/home_logo.svg";
 import { useTranslations, useLocale } from "next-intl";
@@ -54,7 +53,7 @@ export default function NavBar() {
                   locate == "ar" ? "flex-row-reverse" : null
                 }`}
               >
-                <span className={`uppercase pr-2`}> msh </span> {t("learn")}
+                <span className="pr-1"> MSH </span> {t("learn")}
               </Link>
             </li>
           </ul>

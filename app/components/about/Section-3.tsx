@@ -18,7 +18,7 @@ export default function Section3() {
           href={"auth/login"}
           className="flex group bg-white text-black  te items-center  w-fit rounded-full pr-4"
         >
-          <Button text="Join Now" className="rounded-md  " />
+          <Button text="Join Now" className="px-6 rounded-sm" />
           <PiArrowUpRightBold className="text-3xl transition-all group-hover:translate-x-1  group-hover:-translate-y-1" />
         </Link>
       </div>
