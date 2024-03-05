@@ -2,8 +2,8 @@
 import React from "react";
 import Button from "../common/Button";
 import Image from "next/image";
-import learnLogo from "../../assets/logos/learn_logo.svg";
-import { Link } from "../../util/navigation";
+import learnLogo from "@app/assets/logos/learn_logo.svg";
+import { Link } from "@app/util/navigation";
 
 export default function Nav() {
   return (

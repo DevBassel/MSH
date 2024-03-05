@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import logo from "../../assets/logos/home_logo.svg";
+import logo from "@app/assets/logos/home_logo.svg";
 import { useTranslations, useLocale } from "next-intl";
-import { Link } from "../../util/navigation";
+import { Link } from "@app/util/navigation";
 import Button from "./Button";
 
 export default function NavBar() {
@@ -33,7 +33,7 @@ export default function NavBar() {
           className={` mx-3 ${changLocate === "ar" ? "border-r" : "border-l"}`}
         >
           <Button
-            text={changLocate === "ar" ? "عربي" : "En"}
+            text={changLocate === "ar" ? "ع" : "En"}
             className="hover:scale-125 transition-all"
           />
         </Link>

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import s3_1 from "../../assets/home/s3-1.png";
-import s3_2 from "../../assets/home/s3-2.png";
+import s3_1 from "@app/assets/home/s3-1.png";
+import s3_2 from "@app/assets/home/s3-2.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { initScrollAnim } from "../../util/initScrolAnim";
+import { initScrollAnim } from "@app/util/initScrolAnim";
 
 export default function Section3() {
   const t = useTranslations("homeSection-3");

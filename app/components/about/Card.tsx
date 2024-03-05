@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import cardImage from "../../assets/about/card.png";
+import cardImage from "@app/assets/about/card.png";
 export default function Card() {
   return (
     <article className="m-3">

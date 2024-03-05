@@ -1,9 +1,9 @@
 import Image from "next/image";
-import s4 from "../../assets/home/s4.png";
+import s4 from "@app/assets/home/s4.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { initScrollAnim } from "../../util/initScrolAnim";
+import { initScrollAnim } from "@app/util/initScrolAnim";
 import Button from "../common/Button";
 
 export default function Section4() {

@@ -4,7 +4,7 @@ import { BiUser } from "react-icons/bi";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { initScrollAnim } from "../../util/initScrolAnim";
+import { initScrollAnim } from "@app/util/initScrolAnim";
 
 export default function Section2() {
   const t = useTranslations("homeSection-2");

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import footerImg from "../../assets/logos/footer-logo.svg";
+import footerImg from "@app/assets/logos/footer-logo.svg";
 import {
   FaFacebook,
   FaInstagram,

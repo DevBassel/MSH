@@ -3,7 +3,7 @@ import Section from "../common/Section";
 import CourseCard from "./CourseCard";
 import { useTranslations } from "next-intl";
 import Button from "../common/Button";
-import { Link } from "../../util/navigation";
+import { Link } from "@app/util/navigation";
 
 
 export default function Section2() {

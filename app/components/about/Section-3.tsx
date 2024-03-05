@@ -2,9 +2,8 @@ import Image from "next/image";
 import Section from "../common/Section";
 import Button from "../common/Button";
 import { PiArrowUpRightBold } from "react-icons/pi";
-import aboutImg from "../../assets/about/about.png";
-import { motion } from "framer-motion";
-import { Link } from "../../util/navigation";
+import aboutImg from "@app/assets/about/about.png";
+import { Link } from "@app/util/navigation";
 
 export default function Section3() {
   return (

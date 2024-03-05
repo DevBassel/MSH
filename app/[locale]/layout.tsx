@@ -2,12 +2,16 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import { Suspense } from "react";
-import Loading from "./(pages)/loading";
+import { googleClientId } from "../util/googleClientId";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MSH",
+  title: {
+    absolute: "",
+    default: "MSH",
+    template: "MSH | %s",
+  },
   description: "An Investment Platform",
 };
 
@@ -23,7 +27,9 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={inter.className} dir={locale === "en" ? "ltr" : "rtl"}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <GoogleOAuthProvider clientId={googleClientId}>
+            {children}
+          </GoogleOAuthProvider>
         </NextIntlClientProvider>
       </body>
     </html>

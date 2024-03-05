@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Button from "../common/Button";
 import { useRouter } from "next/navigation";
-import ThreePhone from "../../assets/home/3-1.png";
+import ThreePhone from "@app/assets/home/3-1.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { initScrollAnim } from "../../util/initScrolAnim";
-import { Link } from "../../util/navigation";
+import { Link } from "@app/util/navigation";
 export default function Section1() {
   const router = useRouter();
   const t = useTranslations("homeSection-1");

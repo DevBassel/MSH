@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import img_1 from "../../assets/feeds/feed-1.jpg";
+import img_1 from "@app/assets/feeds/feed-1.jpg";
 import Button from "../common/Button";
-import { Link } from "../../util/navigation";
+import { Link } from "@app/util/navigation";
 
 export default function CompanyCard() {
   return (

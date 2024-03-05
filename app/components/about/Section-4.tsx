@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Section from "../common/Section";
-import ourImg from "../../assets/about/about.png";
-import img3_1 from "../../assets/learn/3-1.svg";
-import img3_2 from "../../assets/learn/3-2.svg";
-import img3_3 from "../../assets/learn/3-3.svg";
-import img3_4 from "../../assets/learn/3-4.svg";
-import img3_5 from "../../assets/learn/3-5.svg";
+import ourImg from "@app/assets/about/about.png";
+import img3_1 from "@app/assets/learn/3-1.svg";
+import img3_2 from "@app/assets/learn/3-2.svg";
+import img3_3 from "@app/assets/learn/3-3.svg";
+import img3_4 from "@app/assets/learn/3-4.svg";
+import img3_5 from "@app/assets/learn/3-5.svg";
 import CourseCard from "../msh-learn/CourseCard";
 export default function Section4() {
   return (

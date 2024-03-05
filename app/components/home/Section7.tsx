@@ -2,10 +2,10 @@ import React from "react";
 import Section from "../common/Section";
 import Image from "next/image";
 import Button from "../common/Button";
-import s7 from "../../assets/home/7-1.svg";
+import s7 from "@app/assets/home/7-1.svg";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { initScrollAnim } from "../../util/initScrolAnim";
+import { initScrollAnim } from "@app/util/initScrolAnim";
 export default function Section7() {
   const t = useTranslations("homeSection-7");
   return (
