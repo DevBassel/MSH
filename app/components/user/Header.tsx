@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center w-full  px-5 md:px-10 py-1 justify-between">
           <div className="capitalize  ">
             <h1>Hello,</h1>
-            <h1>TypeScript {"<3"} </h1>
+            <h1>Magdy Basel {"<3"} </h1>
           </div>
 
           <div className="flex items-center flex-[0.8] justify-end">
