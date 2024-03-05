@@ -35,7 +35,8 @@ export default function Section1() {
         <Link href={"/auth/login"}>
           <Button
             text={t("btn")}
-            className=" text-white bg-violet-950 rounded-md mt-10 hover:bg-gradient-to-br from-indigo-950 to-black"
+            className="text-white bg-violet-950 rounded-md mt-10 hover:bg-gradient-to-br 
+            px-5 from-indigo-950 to-black"
           />
         </Link>
       </motion.div>

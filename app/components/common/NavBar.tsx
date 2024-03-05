@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import logo from "@app/assets/logos/home_logo.svg";
 import { useTranslations, useLocale } from "next-intl";
@@ -41,7 +40,7 @@ export default function NavBar() {
           <Image src={logo} alt="logo" className="w-2/3 h-2/3" />
         </div>
         <div className={`  flex  flex-1 items-center justify-end  `}>
-          <ul className=" hidden md:flex list-none [&>li]:relative  flex-1 navBarUl select-none md:flex-row [&>li]:mr-5 [&>li]:lg:mr-10  justify-center [&>li]:cursor-pointer ">
+          <ul className=" hidden md:flex list-none [&>li]:relative  flex-1 navBarUl select-none md:flex-row [&>li]:mr-5 [&>li]:lg:mr-10 justify-center [&>li]:cursor-pointer ">
             {navItems.map((el) => (
               <li key={el.id}>
                 <Link href={el.to}>{el.name}</Link>
@@ -54,7 +53,7 @@ export default function NavBar() {
                   locate == "ar" ? "flex-row-reverse" : null
                 }`}
               >
-                <span className={`uppercase px-2`}> msh </span> {t("learn")}
+                <span className="pr-1"> MSH </span> {t("learn")}
               </Link>
             </li>
           </ul>
