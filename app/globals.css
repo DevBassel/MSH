@@ -116,8 +116,8 @@ section {
   text-decoration: none;
   cursor: pointer;
   background: #fff;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
 }
 
