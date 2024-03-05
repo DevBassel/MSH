@@ -24,9 +24,9 @@ export default function Login() {
   const googlelogin = useGoogleLogin({
     // will send to backend
     onSuccess: (codeResponse) => {
-      console.log(codeResponse.code);
+      console.log(codeResponse);
     },
-    flow: "auth-code",
+    flow: "implicit",
   });
 
   return (

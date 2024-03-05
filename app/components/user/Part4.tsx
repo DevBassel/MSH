@@ -15,7 +15,7 @@ export default function Part4() {
     },
     {
       name: "Page A",
-      value: 10,
+      value: -10,
     },
     {
       name: "Page A",
@@ -32,6 +32,10 @@ export default function Part4() {
     {
       name: "Page A",
       value: 50,
+    },
+    {
+      name: "Page A",
+      value: -50,
     },
     {
       name: "Page A",
@@ -85,7 +89,7 @@ export default function Part4() {
                 borderRadius: "1rem",
               }}
             />
-            
+
             <Area
               type="natural"
               dataKey="name"

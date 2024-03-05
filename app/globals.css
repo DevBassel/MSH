@@ -79,13 +79,21 @@ section {
   border-radius: 6px;
 }
 
+@layer components {
+  .item {
+    @apply relative mx-3 lg:mr-1 cursor-pointer;
+  }
+  .item a {
+    @apply px-5;
+  }
+}
 .navBarUl li::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 120%;
+  width: 100%;
   height: 0;
   transition: all 0.3s;
 }

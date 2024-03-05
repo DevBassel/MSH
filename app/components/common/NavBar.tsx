@@ -41,20 +41,20 @@ export default function NavBar() {
           <Image src={logo} alt="logo" className="w-2/3 h-2/3" />
         </div>
         <div className={`  flex  flex-1 items-center justify-end  `}>
-          <ul className=" hidden md:flex list-none [&>li]:relative  flex-1 navBarUl select-none md:flex-row [&>li]:mr-5 [&>li]:lg:mr-10  justify-center [&>li]:cursor-pointer ">
+          <ul className=" hidden md:flex list-none   flex-1 navBarUl select-none md:flex-row  justify-center ">
             {navItems.map((el) => (
-              <li key={el.id}>
+              <li className="item" key={el.id}>
                 <Link href={el.to}>{el.name}</Link>
               </li>
             ))}
-            <li>
+            <li className="item">
               <Link
                 href={"/msh-learn"}
                 className={`flex  ${
                   locate == "ar" ? "flex-row-reverse" : null
                 }`}
               >
-                <span className={`uppercase px-2`}> msh </span> {t("learn")}
+                <span className={`uppercase pr-2`}> msh </span> {t("learn")}
               </Link>
             </li>
           </ul>
