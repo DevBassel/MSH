@@ -18,11 +18,11 @@ export default function Nav() {
       <div className="m-auto capitalize justify-between flex items-center p-1">
         <Image src={learn} alt="logo" />
 
-        <ul className=" hidden md:flex ml-5 flex-1 justify-start list-none [&>li]:relative  navBarUl select-none md:flex-row [&>li]:mr-2 [&>li]:lg:mr-10 [&>li]:cursor-pointer ">
-          <li>
+        <ul className=" hidden md:flex ml-5 flex-1 justify-start list-none navBarUl select-none md:flex-row ">
+          <li className="item">
             <Link href={"/"}>{t("home")}</Link>
           </li>
-          <li>
+          <li className="item">
             <Link href={"/about"} locale={local}>
               {t("about")}
             </Link>
