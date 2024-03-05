@@ -74,7 +74,7 @@ export default function Feeds() {
                 transition={{ delay: i / 10, duration: 1 }}
                 animate={{ scaleY: 1, opacity: 1 }}
                 key={el.id}
-                className={`bg-white font-mono relative overflow-hidden text-white bg-cover cursor-pointer m-1 row-span-${
+                className={`bg-white   relative overflow-hidden text-white bg-cover cursor-pointer m-1 row-span-${
                   [2, 1, 5, 4, 3][i]
                 }`}
               >

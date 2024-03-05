@@ -4,14 +4,16 @@ import Image from "next/image";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { RiNotification3Line } from "react-icons/ri";
 import divider from "@app/assets/learn/divider.svg";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("dash");
   return (
     <>
       <header className=" sticky top-0 bg-black z-20 justify-between">
         <div className="flex items-center w-full  px-5 md:px-10 py-1 justify-between">
-          <div className="capitalize  ">
-            <h1>Hello,</h1>
+          <div className="capitalize ">
+            <h1>{t("hello")},</h1>
             <h1>Magdy Basel {"<3"} </h1>
           </div>
 

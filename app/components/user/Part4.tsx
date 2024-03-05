@@ -1,13 +1,8 @@
-import {
-  LineChart,
-  Line,
-  Tooltip,
-  ResponsiveContainer,
-  Area,
-  AreaChart,
-} from "recharts";
+import { useTranslations } from "next-intl";
+import { Tooltip, ResponsiveContainer, Area, AreaChart } from "recharts";
 
 export default function Part4() {
+  const t = useTranslations("dash");
   const data = [
     {
       name: "Page A",
@@ -49,20 +44,20 @@ export default function Part4() {
           <h1 className="text-7xl relative w-fit mx-auto">
             180
             <span className="text-sm text-[#0ECC16] absolute top-0 right-0 -translate-y-1/2">
-            12%
+              12%
             </span>
           </h1>
 
-          <p className="font-mono text-center text-xl">Inflow Today</p>
+          <p className="  text-center text-xl">Inflow Today</p>
         </div>
-        <div className="mt-20 flex m-auto font-mono">
+        <div className="mt-20 flex m-auto ">
           <div className="mr-5">
             <p>$2000</p>
-            <p>Amount Invested</p>
+            <p>{t("invested")}</p>
           </div>
           <div>
             <p>$2765</p>
-            <p>Profits</p>
+            <p>{t("profits")}</p>
           </div>
         </div>
       </div>

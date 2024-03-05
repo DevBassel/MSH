@@ -62,7 +62,7 @@ export default function Section6() {
               hidden: { opacity: 0 },
             }}
             // style
-            className=" mb-9 md:m-0 w-1/6"
+            className=" mb-9 md:m-0 w-32 "
           >
             <Image
               src={el.image}
@@ -72,7 +72,7 @@ export default function Section6() {
           </motion.div>
 
           {/* article info */}
-          <div className="ml-5 flex-1">
+          <div className="mx-5 flex-1">
             {/* title */}
             <motion.h3
               // animation
@@ -96,7 +96,7 @@ export default function Section6() {
                 hidden: { opacity: 0, y: 50 },
               }}
               // style
-              className="font-light mt-3 w-full md:w-11/12 text-sm"
+              className="font-light mt-3 w-full md:w-11/12  text-sm"
             >
               {el.text}
             </motion.p>

@@ -87,7 +87,6 @@ section {
     @apply px-4;
   }
 }
-
 .navBarUl li::after {
   content: "";
   position: absolute;

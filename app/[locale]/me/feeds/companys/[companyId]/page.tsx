@@ -31,7 +31,7 @@ export default function page() {
             />
           </div>
 
-          <p className="text-md flex-1 h-[350px] p-5  leading-relaxed font-mono">
+          <p className="text-md flex-1 h-[350px] p-5  leading-relaxed ">
             simply dummy text of the printing and typesetting industry simply
             dummy text of the printing and typesetting industry simply dummy
             text of the printing and typesetting industry simply dummy text of

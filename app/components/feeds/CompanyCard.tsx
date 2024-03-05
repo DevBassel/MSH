@@ -22,7 +22,7 @@ export default function CompanyCard() {
       </div>
       <div className="col-span-6 md:col-span-3 ml-10 py-3">
         <h2 className="text-3xl mb-6">Lorem MG</h2>
-        <p className="leading-[1.8] font-mono">
+        <p className="leading-[1.8] ">
           simply dummy text of the printing and typesetting industry simply
           dummy text of the printing and typesetting industry simply dummy text
           of the printing and typesetting industry simply dummy text of the

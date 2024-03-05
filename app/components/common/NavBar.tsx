@@ -47,14 +47,7 @@ export default function NavBar() {
               </li>
             ))}
             <li className="item">
-              <Link
-                href={"/msh-learn"}
-                className={`flex  ${
-                  locate == "ar" ? "flex-row-reverse" : null
-                }`}
-              >
-                <span className="pr-1"> MSH </span> {t("learn")}
-              </Link>
+              <Link href={"/msh-learn"}>{t("learn")}</Link>
             </li>
           </ul>
         </div>

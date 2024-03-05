@@ -4,13 +4,15 @@ import Button from "../common/Button";
 import Image from "next/image";
 import learnLogo from "@app/assets/logos/learn_logo.svg";
 import { Link } from "@app/util/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Nav() {
+  const t = useTranslations("aboutNav");
   return (
     <nav className=" w-[95%] m-auto  backdrop-blur-lg bg-opacity-35 rounded-full text-white p-1.5 px-5 pt-6">
       <div className="m-auto capitalize flex items-center text-black  justify-between p-1">
-        <Button text={"Demo Use"} className="bg-white  " />
-        <Button text={"Get The App"} className="bg-[#FFC107] " />
+        <Button text={t("demo")} className="bg-white  " />
+        <Button text={t("getApp")} className="bg-[#FFC107] " />
       </div>
 
       <Link href="/" className=" block mx-auto w-fit">

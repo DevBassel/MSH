@@ -1,10 +1,26 @@
 {
   "NavBar": {
     "home": "home",
-    "about": " about",
+    "about": "about MSH",
     "learn": "learn",
     "dowenload": "download app",
     "thx": "Thanks!"
+  },
+
+  "dash": {
+    "hello": "hello",
+    "total": "Total Balance",
+    "change": "Change Personal",
+    "learn": "MSH Learn",
+    "feed": "Feed",
+    "companys": "Companys",
+    "market": "Market",
+    "tpl": "Total Profit Or Loss",
+    "pl": "Profit and loss",
+    "Inflow": "Inflow Today",
+    "more": "More Details",
+    "invested": "Amount Invested",
+    "profits": "Profits"
   },
 
   "homeSection-1": {
@@ -87,5 +103,29 @@
     "item3": {
       "title": "Trusted Clinents"
     }
+  },
+
+  "aboutNav": {
+    "demo": "Demo User",
+    "getApp": "Get The App"
+  },
+  "aboutSection-1": {
+    "title": "About MSH",
+    "text": "simply dummy text of the printing and typesetting industry simply"
+  },
+  "aboutSection-2": {
+    "who": "Who We Are",
+    "our": "Our MSH",
+    "work": "Our Work"
+  },
+  "aboutSection-3": {
+    "title": "MSH Members",
+    "text": "simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting",
+    "join": "join Now"
+  },
+  "aboutSection-4": {
+    "text": "simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting simply dummy text of the printing and typesetting industry simply dummy text",
+    "tool": "We make tool for to go easy investing",
+    "course": "We give u course for learn how can investing"
   }
 }
