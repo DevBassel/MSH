@@ -84,7 +84,7 @@ section {
     @apply relative mx-2 lg:mr-1 py-2 my-4  md:py-0 md:my-0 cursor-pointer;
   }
   .item a {
-    @apply px-4;
+    @apply px-4 block md:inline-block;
   }
   .mobNav {
     @apply absolute md:static top-[calc(100%_+_6px)]  bg-[#382238] md:bg-transparent w-[95%] rounded-b-lg py-3 md:py-0;

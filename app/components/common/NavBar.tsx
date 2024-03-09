@@ -20,7 +20,7 @@ export default function NavBar() {
     {
       id: 1,
       name: t("home"),
-      to: `/${locate}`,
+      to: `/`,
     },
     {
       id: 2,
@@ -74,7 +74,9 @@ export default function NavBar() {
           <ul className=" flex flex-col relative z-30 justify-between h-full list-none flex-1 navBarUl select-none md:flex-row  md:justify-center ">
             {navItems.map((el) => (
               <li
-                className={`item ${path === `${el.to}` ? "active" : ""}`}
+                className={`item ${
+                  path === `${el.to}${locate}` ? "active" : ""
+                }`}
                 key={el.id}
               >
                 <Link href={el.to}>{el.name}</Link>
