@@ -1,30 +1,41 @@
 "use client";
-import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@app/util/navigation";
 import Button from "./Button";
+import { CiMenuBurger } from "react-icons/ci";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
   const locate = useLocale();
-
+  const [toggle, setToggle] = useState(false);
   const t = useTranslations("NavBar");
+  const path = usePathname();
 
   const changLocate = locate === "en" ? "ar" : "en";
   const navItems = [
     {
       id: 1,
       name: t("home"),
-      to: "/",
+      to: `/${locate}`,
     },
     {
       id: 2,
       name: t("about"),
       to: "/about",
     },
+    {
+      id: 3,
+      name: t("login"),
+      to: "/auth/login",
+    },
   ];
+
+  console.log(`${path}`);
   return (
-    <nav className="sticky w-[95%]  z-10  top-3 m-auto  backdrop-blur-lg bg-[#a7a] bg-opacity-35  rounded-full text-white p-1.5 px-5">
-      <div className=" container m-auto capitalize flex items-center justify-around p-1">
+    <nav className="sticky w-[95%]  z-10  top-3 m-auto  backdrop-blur-lg bg-[#a7a] bg-opacity-35  rounded-full text-white p-1.5 px-3">
+      <div className=" container m-auto capitalize flex relative items-center justify-around p-1">
         <Link
           href="/"
           locale={changLocate}
@@ -35,19 +46,35 @@ export default function NavBar() {
             className="hover:scale-125 transition-all"
           />
         </Link>
-        <div>
+
+        <div className="w-full md:w-fit">
           {/* eslint-disable-next-line @next/next/no-img-element*/}
           <img
             loading="lazy"
             src="/assets/logos/home_logo.svg"
             alt="logo"
-            className="w-2/3 h-2/3"
+            className="w-24"
           />
         </div>
-        <div className={`  flex  flex-1 items-center justify-end  `}>
-          <ul className=" hidden md:flex list-none   flex-1 navBarUl select-none md:flex-row  justify-center ">
+
+        <motion.div
+          initial={{
+            x: -500,
+          }}
+          animate={{
+            x: toggle ? 0 : -500,
+          }}
+          transition={{
+            duration: 0.4,
+          }}
+          className={`mobNav md:!-translate-x-0 rounded-xl md:flex flex-1 items-center`}
+        >
+          <ul className=" flex flex-col relative z-30 justify-between h-full list-none flex-1 navBarUl select-none md:flex-row  md:justify-center ">
             {navItems.map((el) => (
-              <li className="item" key={el.id}>
+              <li
+                className={`item ${path === `${el.to}` ? "active" : ""}`}
+                key={el.id}
+              >
                 <Link href={el.to}>{el.name}</Link>
               </li>
             ))}
@@ -55,11 +82,15 @@ export default function NavBar() {
               <Link href={"/msh-learn"}>{t("learn")}</Link>
             </li>
           </ul>
-        </div>
-        <button className="btn rounded-2xl py-3 capitalize px-6 font-extrabold tracking-wider">
-          <span className="text">{t("dowenload")}</span>
-          <span>{t("thx")}</span>
-        </button>
+          <button className="btn rounded-2xl py-3 capitalize px-6 mx-auto block font-extrabold tracking-wider">
+            <span className="text">{t("dowenload")}</span>
+            <span>{t("thx")}</span>
+          </button>
+        </motion.div>
+        <CiMenuBurger
+          className="text-4xl cursor-pointer md:hidden"
+          onClick={() => setToggle(!toggle)}
+        />
       </div>
     </nav>
   );

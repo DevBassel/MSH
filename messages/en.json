@@ -1,10 +1,11 @@
 {
   "NavBar": {
     "home": "home",
-    "about": "about MSH",
+    "about": "about",
     "learn": "learn",
     "dowenload": "download app",
-    "thx": "Thanks!"
+    "thx": "Thanks!",
+    "login": "login"
   },
 
   "dash": {

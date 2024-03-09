@@ -2,9 +2,10 @@
   "NavBar": {
     "home": "الصفحه الرئيسيه",
     "about": "حول",
-    "learn": "تعلم MSH",
+    "learn": "تعلم",
     "dowenload": "حمل التطبيق",
-    "thx": "! شكرا"
+    "thx": "! شكرا",
+    "login": "دخول"
   },
 
   "homeSection-1": {
