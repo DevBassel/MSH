@@ -48,7 +48,7 @@ export default function Login() {
               <img
                 loading="lazy"
                 className="w-6 h-6"
-                src="/assets/auth/google.png"
+                src="/assets/auth/google.svg"
                 alt="google logo"
               />
               <span> Google</span>
@@ -58,7 +58,7 @@ export default function Login() {
               <img
                 loading="lazy"
                 className="w-6 h-6"
-                src="/assets/auth/apple.png"
+                src="/assets/auth/apple.svg"
                 alt="apple logo"
               />
               <span> Apple</span>
