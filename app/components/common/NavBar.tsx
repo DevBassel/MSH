@@ -6,6 +6,8 @@ import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { FaBurger } from "react-icons/fa6";
+import { FaWindowClose } from "react-icons/fa";
 
 export default function NavBar() {
   const locate = useLocale();
@@ -87,10 +89,22 @@ export default function NavBar() {
             <span>{t("thx")}</span>
           </button>
         </motion.div>
-        <CiMenuBurger
+
+        <motion.div
+          initial={{
+            scale: 1,
+          }}
+          whileTap={{
+            scale: 0.5,
+          }}
+          animate={{
+            scale: 1,
+          }}
           className="text-4xl cursor-pointer md:hidden"
           onClick={() => setToggle(!toggle)}
-        />
+        >
+          {toggle ? <FaWindowClose /> : <FaBurger />}
+        </motion.div>
       </div>
     </nav>
   );
