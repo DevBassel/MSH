@@ -1,6 +1,4 @@
 import Image from "next/image";
-import s3_1 from "@app/assets/home/s3-1.png";
-import s3_2 from "@app/assets/home/s3-2.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -51,11 +49,23 @@ export default function Section3() {
         className="grid [&_img]:rounded-2xl grid-cols-1 md:grid-cols-2 [&>div]:p-4 [&>div]:rounded-xl [&>div]:h-full"
       >
         <div>
-          <Image alt="s3Img" src={s3_1} className="max-h-full" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            alt="s3Img"
+            src="/assets/home/s3-1.png"
+            className="max-h-full"
+          />
         </div>
 
         <div>
-          <Image alt="s3Img" src={s3_2} className="max-h-full" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            alt="s3Img"
+            src="/assets/home/s3-2.png"
+            className="max-h-full"
+          />
         </div>
       </motion.div>
     </Section>

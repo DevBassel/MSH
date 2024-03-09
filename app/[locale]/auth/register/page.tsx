@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { MdEmail, MdPassword, MdPhone, MdVerifiedUser } from "react-icons/md";
-import mockpPhone from "@app/assets/auth/login.png";
 import Image from "next/image";
 import {
   FaFacebook,
@@ -20,7 +19,7 @@ export default function Register() {
     // Login page (Apple - google)
     // First section (BG) for make a hero section
     // we made this with tailwind
-    <main className="bg-[url(./assets/auth/BG.png)] flex items-center h-screen bg-cover">
+    <main className="bg-[url(/assets/auth/BG.png)] flex items-center h-screen bg-cover">
       <div className="container m-auto w-4/5  flex rounded-2xl overflow-hidden">
         {/* login half (Apple - google) */}
         <div className="first flex flex-col flex-1 items-center bg-zinc-300 py-3 w-2/4">
@@ -134,7 +133,13 @@ export default function Register() {
 
         {/* logo(APP) half */}
         <div className="secend hidden md:flex bg-gradient-to-t from-[#CB6CE6] to-[#1462CA] w-2/4  flex-col items-center justify-center">
-          <Image src={mockpPhone} alt="" className="w-3/5 pb-5" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/auth/login.png"
+            alt=""
+            className="w-3/5 pb-5"
+          />
           <div className="flex list-none w-full justify-evenly text-white text-3xl">
             <li className="">
               <a href="#"></a>

@@ -1,7 +1,4 @@
 import Image from "next/image";
-import iphonemocakp from "@app/assets/home/iphone-15w.png";
-import google from "@app/assets/home/Btn-Download-Google-play.svg";
-import apple from "@app/assets/home/Btn-Dwonload-App-Store.svg";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 
@@ -33,12 +30,20 @@ export default function LastSection() {
 
         {/* icon google play and app store */}
         <div className="flex justify-center w-2/5 mx-auto my-10 lg:flex-row items-center lg:w-1/2">
-          <Image
-            src={google}
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/home/Btn-Download-Google-play.png"
             alt="google"
             className="cursor-pointer m-2 w-52"
           />
-          <Image src={apple} alt="apple" className="cursor-pointer m-2 w-52" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/home/Btn-Dwonload-App-Store.png"
+            alt="apple"
+            className="cursor-pointer m-2 w-52"
+          />
         </div>
       </motion.div>
 
@@ -53,8 +58,10 @@ export default function LastSection() {
         // style
         className="w-full md:w-[150%]"
       >
-        <Image
-          src={iphonemocakp}
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          loading="lazy"
+          src="/assets/home/iphone-15w.png"
           alt="2phone"
           className="w-11/12 block m-auto"
         />

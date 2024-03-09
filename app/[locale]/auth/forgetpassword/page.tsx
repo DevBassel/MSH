@@ -6,7 +6,7 @@ export default function Register() {
   return (
     // Forget Password Page
 
-    <div className="w-full bg-[url(./assets/auth/BG.png)] bg-cover bg-white h-screen flex items-center justify-center">
+    <div className="w-full bg-[url(/assets/auth/BG.png)] bg-cover bg-white h-screen flex items-center justify-center">
       {/* Enter your Email For Create a new Password */}
       <div
         className="bg-gradient-to-t from-[#CB6CE6] to-[#1462CA] m-auto w-1/2 h-3/5 rounded-2xl

@@ -9,7 +9,7 @@ import LastSection from "@app/components/msh-learn/LastSection";
 export default function MSH_Learn() {
   return (
     <main className="[&_section]:py-20">
-      <div className="bg-[url(./assets/learn/s1BG.png)] bg-cover ">
+      <div className="bg-[url(/assets/learn/s1BG.png)] bg-cover ">
         <Nav />
         <Section1 />
       </div>

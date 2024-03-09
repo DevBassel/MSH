@@ -48,7 +48,7 @@ export default function Section2() {
           hidden: { opacity: 0, x: -200 },
         }}
         // style
-        className="p-10 pt-96  bg-[url(./assets/home/s3-bg.png)] rounded-3xl bg-no-repeat bg-cover"
+        className="p-10 pt-96  bg-[url(/assets/home/s3-bg.png)] rounded-3xl bg-no-repeat bg-cover"
       >
         <h3 className="text-4xl font-extrabold ">150+</h3>
         <p className="text-sm">{t("title")}</p>

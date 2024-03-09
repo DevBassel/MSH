@@ -2,7 +2,6 @@ import React from "react";
 import Section from "../common/Section";
 import Image from "next/image";
 import Button from "../common/Button";
-import s7 from "@app/assets/home/7-1.svg";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { initScrollAnim } from "@app/util/initScrolAnim";
@@ -44,7 +43,13 @@ export default function Section7() {
         // style
         className="w-full md:w-1/2 "
       >
-        <Image src={s7} alt="s4" className="max-w-full block mx-auto" />
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          loading="lazy"
+          src="/assets/home/7-1.png"
+          alt="s4"
+          className="max-w-full block mx-auto"
+        />
       </motion.div>
     </Section>
   );

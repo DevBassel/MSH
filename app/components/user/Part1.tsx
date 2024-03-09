@@ -2,9 +2,7 @@
 import { GiWallet } from "react-icons/gi";
 import Button from "../common/Button";
 import { BsFilePostFill, BsPersonLinesFill } from "react-icons/bs";
-import learn from "@app/assets/learn/learn.svg";
 import Image from "next/image";
-import companys from "@app/assets/companys.svg";
 import { Link } from "@app/util/navigation";
 import { useTranslations } from "next-intl";
 
@@ -43,7 +41,13 @@ export default function Part1() {
 
       <div className="col-span-4 text-center">
         <Link href={"/msh-learn"}>
-          <Image src={learn} alt="learn" className="block mx-auto mb-4" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/learn/learn.png"
+            alt="learn"
+            className="block mx-auto mb-4"
+          />
           <h4 className="text-xl capitalize font-bold">{t("learn")}</h4>
         </Link>
       </div>
@@ -59,7 +63,13 @@ export default function Part1() {
 
       <div className="col-span-4">
         <Link href={"/me/feeds/companys"}>
-          <Image src={companys} alt="company" className="block mx-auto" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/companys.png"
+            alt="company"
+            className="block mx-auto"
+          />
           <h4 className="text-xl capitalize font-bold">{t("companys")}</h4>
         </Link>
       </div>

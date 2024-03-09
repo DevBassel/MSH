@@ -1,9 +1,5 @@
 import Image from "next/image";
 import Section from "../common/Section";
-import img6_1 from "@app/assets/home/6-1.svg";
-import img6_2 from "@app/assets/home/6-2.svg";
-import img6_3 from "@app/assets/home/6-3.svg";
-import img6_4 from "@app/assets/home/6-4.svg";
 import { motion } from "framer-motion";
 import { initScrollAnim } from "@app/util/initScrolAnim";
 import { useTranslations } from "next-intl";
@@ -14,26 +10,28 @@ export default function Section6() {
   const articles = [
     {
       id: 1,
-      image: img6_1,
+      image: "/assets/home/6-1.png",
       title: t("item1.title"),
       text: t("item1.p"),
     },
     {
       id: 2,
-      image: img6_2,
+      image: "/assets/home/6-2.png",
       title: t("item2.title"),
       text: t("item2.p"),
     },
     {
       id: 3,
-      image: img6_3,
+      image: "/assets/home/6-3.png",
       title: t("item3.title"),
-      text: t("item3.p"),},
+      text: t("item3.p"),
+    },
     {
       id: 4,
-      image: img6_4,
+      image: "/assets/home/6-4.png",
       title: t("item4.title"),
-      text: t("item4.p"),},
+      text: t("item4.p"),
+    },
   ];
   return (
     <Section className="[&>article]:mb-20 ">
@@ -54,7 +52,9 @@ export default function Section6() {
             // style
             className=" mb-9 md:m-0 w-1/6"
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element*/}
+            <img
+              loading="lazy"
               src={el.image}
               alt="articleImag"
               className="max-w-full max-h-full "

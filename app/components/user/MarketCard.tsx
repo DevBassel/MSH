@@ -1,5 +1,4 @@
 import Image from "next/image";
-import company from "@app/assets/company.svg";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 
@@ -35,9 +34,13 @@ export default function MarketCard() {
     },
   ];
   return (
-    <div dir="ltr" className="flex bg-gradient-to-r my-2 m-1 from-[#172774] to-[#C058E4] p-2 rounded-xl">
+    <div
+      dir="ltr"
+      className="flex bg-gradient-to-r my-2 m-1 from-[#172774] to-[#C058E4] p-2 rounded-xl"
+    >
       <div className="mr-3 ">
-        <Image src={company} alt="company" />
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img loading="lazy" src="/assets/company.png" alt="company" />
         <p>68.87</p>
       </div>
       <div className="w-full flex flex-col">

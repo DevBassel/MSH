@@ -2,14 +2,20 @@
 import Image from "next/image";
 import CourseCard from "@app/components/msh-learn/CourseCard";
 import { Link } from "@app/util/navigation";
-import logo from "@app/assets/logos/learn_logo.svg";
+
 import Button from "@app/components/common/Button";
 
 export default function Coures({ params }: { params: { courseId: string } }) {
   return (
     <section className="w-full md:w-4/5 mx-auto  px-4">
       <Link href={"/"} className="block mx-auto w-fit my-3">
-        <Image src={logo} alt="logo" className="w-14" />
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          loading="lazy"
+          src="/assets/logos/learn_logo.svg"
+          alt="logo"
+          className="w-14"
+        />
       </Link>
       <div className="flex flex-col  md:flex-row overflow-auto relative">
         <div className=" md:sticky md:w-1/3 top-0">

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Section from "../common/Section";
 import Button from "../common/Button";
 import { PiArrowUpRightBold } from "react-icons/pi";
-import aboutImg from "@app/assets/about/about.png";
 import { Link } from "@app/util/navigation";
 import { useTranslations } from "next-intl";
 
@@ -23,7 +22,8 @@ export default function Section3() {
       </div>
 
       <div className="felx1">
-        <Image src={aboutImg} alt="about" />
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img loading="lazy" src="/assets/about/about.png" alt="about" />
       </div>
     </Section>
   );

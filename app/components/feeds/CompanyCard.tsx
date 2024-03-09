@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import img_1 from "@app/assets/feeds/feed-1.jpg";
 import Button from "../common/Button";
 import { Link } from "@app/util/navigation";
 
@@ -8,8 +7,10 @@ export default function CompanyCard() {
   return (
     <article className="grid grid-cols-6 my-10">
       <div className="col-span-6 md:col-span-3 lg:col-span-2 h-full relative">
-        <Image
-          src={img_1}
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          loading="lazy"
+          src="/assets/feeds/feed-1.jpg"
           alt="company"
           className="h-full w-full object-cover rounded-2xl"
         />

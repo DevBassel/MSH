@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { RiNotification3Line } from "react-icons/ri";
-import divider from "@app/assets/learn/divider.svg";
 import { useTranslations } from "next-intl";
 
 export default function Header() {
@@ -32,7 +31,13 @@ export default function Header() {
           animate={{ scaleX: 1 }}
           className="mt-1"
         >
-          <Image src={divider} className="w-full" alt="" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/learn/divider.png"
+            className="w-full"
+            alt=""
+          />
         </motion.div>
       </header>
     </>

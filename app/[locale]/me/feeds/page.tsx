@@ -1,10 +1,5 @@
 "use client";
 import Nav from "@app/components/about/Nav";
-import img_1 from "@app/assets/feeds/feed-1.jpg";
-import img_2 from "@app/assets/feeds/feed-2.jpg";
-import img_3 from "@app/assets/feeds/feed-3.jpg";
-import img_4 from "@app/assets/feeds/feed-4.jpg";
-import img_5 from "@app/assets/feeds/feed-4.jpg";
 import { StaticImageData } from "next/image";
 import { BsArrowBarRight } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -16,38 +11,38 @@ export default function Feeds() {
     id: number;
     name: string;
     text: string;
-    img: StaticImageData;
+    img: string;
   }[] = [
     {
       id: 1,
       name: "item name",
       text: "simply dummy text of the printing and typesetting industry",
-      img: img_1,
+      img: "/assets/feeds/feed-1.jpg",
     },
     {
       id: 2,
       name: "item name",
       text: "simply dummy text of the printing and typesetting industry",
-      img: img_2,
+      img: "/assets/feeds/feed-2.jpg",
     },
     {
       id: 3,
       name: "item name",
       text: "simply dummy text of the printing and typesetting industry",
-      img: img_3,
+      img: "/assets/feeds/feed-3.jpg",
     },
     {
       id: 4,
       name: "item name",
       text: "simply dummy text of the printing and typesetting industry",
 
-      img: img_4,
+      img: "/assets/feeds/feed-4.jpg",
     },
     {
       id: 4,
       name: "item name",
       text: "simply dummy text of the printing and typesetting industry",
-      img: img_5,
+      img: "/assets/feeds/feed-5.jpg",
     },
   ];
   return (

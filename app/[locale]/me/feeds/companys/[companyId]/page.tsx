@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Nav from "@app/components/about/Nav";
 import Section from "@app/components/common/Section";
-import img from "@app/assets/feeds/feed-1.jpg";
+
 import Button from "@app/components/common/Button";
 export default function page() {
   return (
@@ -13,8 +13,10 @@ export default function page() {
         <div className="flex flex-col md:flex-row  overflow-auto ">
           <div className="w-full md:w-1/3 h-full md:sticky top-0">
             <div className="h-1/2 relative">
-              <Image
-                src={img}
+              {/* eslint-disable-next-line @next/next/no-img-element*/}
+              <img
+                loading="lazy"
+                src="/assets/feeds/feed-1.jpg"
                 alt="company"
                 className="h-full w-full object-cover rounded-2xl"
               />

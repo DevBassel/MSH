@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import CourseCard from "@app/components/msh-learn/CourseCard";
-import learn from "@app/assets/logos/learn_logo.svg";
+
 import Image from "next/image";
 import Section from "@app/components/common/Section";
 import { Link } from "@app/util/navigation";
@@ -12,7 +12,8 @@ export default function Our_course() {
       <div>
         <div className="flex justify-center my-5">
           <Link href={"/"}>
-            <Image src={learn} alt="logo" />
+            {/* eslint-disable-next-line @next/next/no-img-element*/}
+            <img loading="lazy" src="/assets/logos/learn_logo.svg" alt="logo" />
           </Link>
         </div>
       </div>

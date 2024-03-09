@@ -1,9 +1,6 @@
 "use client";
 import Image from "next/image";
 import { Link } from "@app/util/navigation";
-import googleIcone from "@app/assets/auth/google.svg";
-import appleIcone from "@app/assets/auth/apple.svg";
-import mockpPhone from "@app/assets/auth/login.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -15,7 +12,6 @@ import { MdEmail, MdPassword } from "react-icons/md";
 import { ImEye } from "react-icons/im";
 import { RiEyeCloseFill } from "react-icons/ri";
 import { useState } from "react";
-
 import { useGoogleLogin } from "@react-oauth/google";
 
 export default function Login() {
@@ -33,7 +29,7 @@ export default function Login() {
     // Login page (Apple - google)
     // First section (BG) for make a hero section
     // we made this with tailwind
-    <main className="bg-[url(./assets/auth/BG.png)] font-cairo flex items-center h-screen bg-cover">
+    <main className="bg-[url(/assets/auth/BG.png)] font-cairo flex items-center h-screen bg-cover">
       <div className="container m-auto w-4/5 flex rounded-2xl overflow-hidden">
         {/* login half (Apple - google) */}
         <div className="first flex flex-1 flex-col py-5  items-center bg-zinc-300 w-2/4">
@@ -48,19 +44,21 @@ export default function Login() {
               onClick={() => googlelogin()}
               className="px-4 py-2 border flex gap-2 bg-white hover:border-slate-400 border-slate-200 rounded-lg hover:shadow transition duration-150"
             >
-              <Image
-                className="w-6 h-6"
-                src={googleIcone}
+              {/* eslint-disable-next-line @next/next/no-img-element*/}
+              <img
                 loading="lazy"
+                className="w-6 h-6"
+                src="/assets/auth/google.png"
                 alt="google logo"
               />
               <span> Google</span>
             </button>
             <button className="px-4 py-2 border flex gap-2 bg-white hover:border-slate-400 border-slate-200 rounded-lg hover:shadow transition duration-150">
-              <Image
-                className="w-6 h-6"
-                src={appleIcone}
+              {/* eslint-disable-next-line @next/next/no-img-element*/}
+              <img
                 loading="lazy"
+                className="w-6 h-6"
+                src="/assets/auth/apple.png"
                 alt="apple logo"
               />
               <span> Apple</span>
@@ -148,7 +146,13 @@ export default function Login() {
 
         {/* logo(APP) half */}
         <div className="secend hidden lg:flex bg-gradient-to-t from-[#CB6CE6] to-[#1462CA] w-2/4 flex-col items-center justify-center">
-          <Image src={mockpPhone} alt="" className="w-3/5 pb-5" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/auth/login.png"
+            alt=""
+            className="w-3/5 pb-5"
+          />
           <div className="flex list-none w-full justify-evenly text-white text-3xl">
             <li className="">
               <a href="#"></a>

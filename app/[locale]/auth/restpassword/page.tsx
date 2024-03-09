@@ -4,7 +4,7 @@ import { MdPassword } from "react-icons/md";
 
 export default function RestPassword() {
   return (
-    <div className="w-full bg-[url(./assets/auth/BG.png)] bg-cover bg-white h-screen flex items-center justify-center">
+    <div className="w-full bg-[url(/assets/auth/BG.png)] bg-cover bg-white h-screen flex items-center justify-center">
       <div
         className="bg-gradient-to-t from-[#CB6CE6] to-[#1462CA] m-auto w-1/2 h-3/5 rounded-2xl
                     flex flex-col justify-center items-center"

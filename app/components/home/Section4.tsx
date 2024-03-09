@@ -1,5 +1,4 @@
 import Image from "next/image";
-import s4 from "@app/assets/home/s4.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -41,7 +40,8 @@ export default function Section4() {
         // style
         className="w-full md:w-1/2"
       >
-        <Image src={s4} alt="s4" />
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img loading="lazy" src="/assets/home/s4.png" alt="s4" />
       </motion.div>
     </Section>
   );

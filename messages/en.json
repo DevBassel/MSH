@@ -109,20 +109,24 @@
     "demo": "Demo User",
     "getApp": "Get The App"
   },
+
   "aboutSection-1": {
     "title": "About MSH",
     "text": "simply dummy text of the printing and typesetting industry simply"
   },
+
   "aboutSection-2": {
     "who": "Who We Are",
     "our": "Our MSH",
     "work": "Our Work"
   },
+
   "aboutSection-3": {
     "title": "MSH Members",
     "text": "simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting",
     "join": "join Now"
   },
+
   "aboutSection-4": {
     "text": "simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting simply dummy text of the printing and typesetting industry simply dummy text of the printing and typesetting simply dummy text of the printing and typesetting industry simply dummy text",
     "tool": "We make tool for to go easy investing",

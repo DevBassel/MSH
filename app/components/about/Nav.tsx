@@ -2,7 +2,7 @@
 import React from "react";
 import Button from "../common/Button";
 import Image from "next/image";
-import learnLogo from "@app/assets/logos/learn_logo.svg";
+
 import { Link } from "@app/util/navigation";
 import { useTranslations } from "next-intl";
 
@@ -16,8 +16,10 @@ export default function Nav() {
       </div>
 
       <Link href="/" className=" block mx-auto w-fit">
-        <Image
-          src={learnLogo}
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          loading="lazy"
+          src="/assets/logos/learn_logo.svg"
           alt="learn logo"
           className="block mx-auto -mt-14 cursor-pointer"
         />

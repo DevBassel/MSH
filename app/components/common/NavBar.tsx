@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import logo from "@app/assets/logos/home_logo.svg";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@app/util/navigation";
 import Button from "./Button";
@@ -37,7 +36,13 @@ export default function NavBar() {
           />
         </Link>
         <div>
-          <Image src={logo} alt="logo" className="w-2/3 h-2/3" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/logos/home_logo.svg"
+            alt="logo"
+            className="w-2/3 h-2/3"
+          />
         </div>
         <div className={`  flex  flex-1 items-center justify-end  `}>
           <ul className=" hidden md:flex list-none   flex-1 navBarUl select-none md:flex-row  justify-center ">

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Button from "../common/Button";
 import { useRouter } from "next/navigation";
-import ThreePhone from "@app/assets/home/3-1.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { initScrollAnim } from "../../util/initScrolAnim";
 import { Link } from "@app/util/navigation";
+import { Suspense } from "react";
+import Loading from "@app/[locale]/loading";
 export default function Section1() {
   const router = useRouter();
   const t = useTranslations("homeSection-1");
@@ -51,7 +52,15 @@ export default function Section1() {
         // style
         className="w-full lg:w-1/2 flex justify-center "
       >
-        <Image src={ThreePhone} alt="phone" className="max-w-full" />
+        <Suspense fallback={<Loading />}>
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/home/3-1.png"
+            alt="phone"
+            className="max-w-full"
+          />
+        </Suspense>
       </motion.div>
     </Section>
   );

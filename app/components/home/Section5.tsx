@@ -1,5 +1,4 @@
 import Image from "next/image";
-import s5 from "@app/assets/home/s5.png";
 import Section from "../common/Section";
 import { motion } from "framer-motion";
 import { initScrollAnim } from "@app/util/initScrolAnim";
@@ -18,7 +17,13 @@ export default function Section5() {
         // style
         className="w-full md:w-1/2 "
       >
-        <Image src={s5} alt="s4" className="max-h-full" />
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          loading="lazy"
+          src="/assets/home/s5.png"
+          alt="s4"
+          className="max-h-full"
+        />
       </motion.div>
 
       {/* cards grid */}

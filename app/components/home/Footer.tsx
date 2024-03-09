@@ -1,5 +1,4 @@
 import Image from "next/image";
-import footerImg from "@app/assets/logos/footer-logo.svg";
 import {
   FaFacebook,
   FaInstagram,
@@ -11,7 +10,13 @@ export default function Footer() {
     <footer className="text-white p-5 pt-10">
       <div className="container m-auto grid grid-cols-4 md:grid-cols-5 [&>div_li]:text-sm [&>div_li]:mb-4 items-center  justify-center">
         <div className="md:col-span-2 col-span-4">
-          <Image src={footerImg} alt="footer img" className="w-36" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            src="/assets/logos/footer-logo.svg"
+            alt="footer img"
+            className="w-36"
+          />
           <p className="text-sm leading-7 mt-5 w-11/12">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
             blanditiis delectus sunt perspiciatis recusandae placeat dolore quam

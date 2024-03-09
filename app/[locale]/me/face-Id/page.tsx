@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import logo from "@app/assets/logos/logo.png";
 import Webcam from "react-webcam";
 
 export default function FaceId() {
@@ -13,7 +12,7 @@ export default function FaceId() {
   }, []);
 
   return (
-    <main className="bg-[url(./assets/auth/BG.png)] flex items-center h-screen bg-cover">
+    <main className="bg-[url(/assets/auth/BG.png)] flex items-center h-screen bg-cover">
       <div className="container m-auto w-4/5 h-4/5 flex rounded-2xl overflow-hidden">
         <div className="first flex flex-1 items-center bg-zinc-300 w-2/4">
           <div className="flex-1 flex-col capitalize">
@@ -43,7 +42,13 @@ export default function FaceId() {
           </div>
         </div>
         <div className="second hidden md:flex items-center justify-center bg-gradient-to-t from-[#CB6CE6] to-[#1462CA] w-2/4">
-          <Image className="scale-75" src={logo} alt="logoSide" />
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            loading="lazy"
+            className="scale-75"
+            src="/assets/logos/logo.svg"
+            alt="logoSide"
+          />
         </div>
       </div>
     </main>

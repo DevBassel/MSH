@@ -4,14 +4,16 @@ import { Link } from "@app/util/navigation";
 interface FeedItemI {
   name: string;
   text: string;
-  img: StaticImageData;
+  img: string;
 }
 
 export default function FeedItem({ img, name, text }: FeedItemI) {
   return (
     <Link href={"feeds/companys/1"}>
       <div className=" h-full transition-all ">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img
+          loading="lazy"
           src={img}
           alt="test"
           className="absolute left-0 top-0 h-full w-full object-cover z-[1]"

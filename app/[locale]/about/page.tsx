@@ -13,13 +13,13 @@ export default function About() {
     <main className="[&>section]:py-20">
       <Nav />
 
-      <div className="bg-[url(./assets/learn/s1BG.png)] bg-cover mt-10 py-5 ">
+      <div className="bg-[url(/assets/learn/s1BG.png)] bg-cover mt-10 py-5 ">
         <Section1 />
       </div>
 
       <Section2 />
 
-      <div className="bg-[url(./assets/learn/s1BG.png)] bg-cover ">
+      <div className="bg-[url(/assets/learn/s1BG.png)] bg-cover ">
         <Section3 />
       </div>
 

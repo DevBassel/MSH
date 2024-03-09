@@ -1,11 +1,6 @@
 "use client";
 import Image from "next/image";
 import Section from "../common/Section";
-import img3_1 from "@app/assets/learn/3-1.svg";
-import img3_2 from "@app/assets/learn/3-2.svg";
-import img3_3 from "@app/assets/learn/3-3.svg";
-import img3_4 from "@app/assets/learn/3-4.svg";
-import img3_5 from "@app/assets/learn/3-5.svg";
 import { motion } from "framer-motion";
 import { initScrollAnim } from "../../util/initScrolAnim";
 import { useTranslations } from "next-intl";
@@ -16,31 +11,31 @@ export default function Section6() {
   const articles = [
     {
       id: 1,
-      image: img3_1,
+      image: "/assets/learn/3-1.png",
       title: t("item1.title"),
       text: t("item1.p"),
     },
     {
       id: 2,
-      image: img3_2,
+      image: "/assets/learn/3-2.png",
       title: t("item2.title"),
       text: t("item2.p"),
     },
     {
       id: 3,
-      image: img3_3,
+      image: "/assets/learn/3-3.png",
       title: t("item3.title"),
       text: t("item3.p"),
     },
     {
       id: 4,
-      image: img3_4,
+      image: "/assets/learn/3-4.png",
       title: t("item4.title"),
       text: t("item4.p"),
     },
     {
       id: 5,
-      image: img3_5,
+      image: "/assets/learn/3-5.png",
       title: t("item4.title"),
       text: t("item4.p"),
     },
@@ -64,7 +59,9 @@ export default function Section6() {
             // style
             className=" mb-9 md:m-0 w-32 "
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element*/}
+            <img
+              loading="lazy"
               src={el.image}
               alt="articleImag"
               className="max-w-full max-h-full "
