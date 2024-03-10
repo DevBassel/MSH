@@ -66,7 +66,7 @@ export default function Part1() {
           {/* eslint-disable-next-line @next/next/no-img-element*/}
           <img
             loading="lazy"
-            src="/assets/companys.png"
+            src="/assets/companys.svg"
             alt="company"
             className="block mx-auto"
           />

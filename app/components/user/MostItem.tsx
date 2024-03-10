@@ -9,7 +9,7 @@ export default function MostItem() {
     >
       <div className="mr-3 ">
         {/* eslint-disable-next-line @next/next/no-img-element*/}
-        <img loading="lazy" src="/assets/company.png" alt="company" />
+        <img loading="lazy" src="/assets/company.svg" alt="company" />
         <p>68.87</p>
       </div>
       <div className="w-full flex flex-col">

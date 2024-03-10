@@ -2,7 +2,6 @@
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@app/util/navigation";
 import Button from "./Button";
-import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
